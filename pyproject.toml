@@ -19,13 +19,15 @@ classifiers = [
 ]
 
 dependencies = [
-    "fast-diff-match-patch==2.0.1",
-    "numpy==1.24.2",
-    "openpecha==0.9.23",
-    "pypandoc==1.11",
-    "prettytable==3.8.0"
+    "fast-diff-match-patch>=2.0.1",
+    "openpecha>=0.9.23",
+    "pypandoc>=1.11",
+    "prettytable>=3.8.0",
+    "regex",
 ]
 
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.setuptools.package-data]
 CommonSpell = ["res/bo/*.txt"]
