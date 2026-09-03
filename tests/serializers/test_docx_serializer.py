@@ -3,9 +3,9 @@ import pytest
 from pathlib import Path
 
 
-from CommonSpell.serializers.docx import DocxSerializer
-from CommonSpell.weighers.matrix_weigher import TokenMatrixWeigher
-from CommonSpell.weighers.token_weigher_count import TokenCountWeigher
+from pydurma.serializers.docx import DocxSerializer
+from pydurma.weighers.matrix_weigher import TokenMatrixWeigher
+from pydurma.weighers.token_weigher_count import TokenCountWeigher
 
 
 @pytest.mark.skip(reason="not able to install pandoc in github action for ci")
@@ -29,7 +29,7 @@ def test_docx_serializer():
     
 
     with tempfile.TemporaryDirectory() as temp_dir:
-        expected_serialized_matrix_path = Path(temp_dir) / 'common_spell.docx'
+        expected_serialized_matrix_path = Path(temp_dir) / 'pydurma.docx'
 
         serializer = DocxSerializer(weighted_matrix, output_dir=Path(temp_dir), text_id='test')
         serialized_matrix_md = serializer.serialize_matrix()

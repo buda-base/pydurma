@@ -1,8 +1,8 @@
 from pathlib import Path
 
-from CommonSpell.serializers.csv import CSVSerializer
-from CommonSpell.weighers.matrix_weigher import TokenMatrixWeigher
-from CommonSpell.weighers.token_weigher_count import TokenCountWeigher
+from pydurma.serializers.csv import CSVSerializer
+from pydurma.weighers.matrix_weigher import TokenMatrixWeigher
+from pydurma.weighers.token_weigher_count import TokenCountWeigher
 
 
 def test_csv_serializer():

@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "CommonSpell"
+name = "pydurma"
 version = "0.0.1"
 authors = [
   { name="Elie", email="roux.elie@gmail.com" },
@@ -20,19 +20,21 @@ classifiers = [
 
 dependencies = [
     "fast-diff-match-patch>=2.0.1",
-    "openpecha>=0.9.23",
     "pypandoc>=1.11",
     "prettytable>=3.8.0",
     "regex",
 ]
 
 [tool.setuptools.packages.find]
-where = ["src"]
+include = ["pydurma*"]
 
 [tool.setuptools.package-data]
-CommonSpell = ["res/bo/*.txt"]
+pydurma = ["res/bo/*.txt"]
 
 [project.optional-dependencies]
+opf = [
+    "openpecha>=0.9.23",
+]
 dev = [
     "pytest",
     "pytest-cov",
@@ -41,5 +43,5 @@ dev = [
 
 
 [project.urls]
-"Homepage" = "https://github.com/OpenPecha/openpecha-project-template"
-"Bug Tracker" = "https://github.com/OpenPecha/openpecha-project-template/issues"
+"Homepage" = "https://github.com/buda-base/pydurma"
+"Bug Tracker" = "https://github.com/buda-base/pydurma/issues"

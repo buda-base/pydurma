@@ -1,8 +1,8 @@
 import re
-from CommonSpell.bo.tokenizer_bo import TibetanTokenizer
-from CommonSpell.bo.normalizer_bo import TibetanNormalizer
-from CommonSpell.encoder import Encoder
-from CommonSpell.input_filters.pattern_filter import PatternInputFilter
+from pydurma.bo.tokenizer_bo import TibetanTokenizer
+from pydurma.bo.normalizer_bo import TibetanNormalizer
+from pydurma.encoder import Encoder
+from pydurma.input_filters.pattern_filter import PatternInputFilter
 
 def test_tokenizer_bo():
     test_string = "བཀྲ་ཤིས་ཀུན་གྱི་བཀྲ་ཤིས་པ།"

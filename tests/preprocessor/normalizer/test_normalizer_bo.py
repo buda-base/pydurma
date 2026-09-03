@@ -1,6 +1,6 @@
 import pytest
 
-from CommonSpell.bo.normalizer_bo import assert_conv, remove_affixes
+from pydurma.bo.normalizer_bo import assert_conv, remove_affixes
 
 
 def test_remove_affixes():

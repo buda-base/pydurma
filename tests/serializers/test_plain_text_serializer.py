@@ -1,8 +1,8 @@
 from pathlib import Path
 
-from CommonSpell.serializers.plain_text import PlainTextSerializer
-from CommonSpell.weighers.matrix_weigher import TokenMatrixWeigher
-from CommonSpell.weighers.token_weigher_count import TokenCountWeigher
+from pydurma.serializers.plain_text import PlainTextSerializer
+from pydurma.weighers.matrix_weigher import TokenMatrixWeigher
+from pydurma.weighers.token_weigher_count import TokenCountWeigher
 
 def test_plain_text_serializer():
     token_matrix = [
